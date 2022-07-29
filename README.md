@@ -33,16 +33,16 @@ the table must be prevented however further valid movement commands myst still b
 
 #### Instructions on how to run this app ####
 
-###### 1. Clone the application from github. See link below. ######
-   ###### https://github.com/shee064/iress-toyrobot-cc.git ######
+1. Clone the application from github. See link below.
+   https://github.com/shee064/iress-toyrobot-cc.git 
 
-###### 2. Navigate to the directory of the cloned project and execute the mvn install command to build the project and generate the jar file. ######
-	 ###### mvn install ######
+2. Navigate to the directory of the cloned project and execute the mvn install command to build the project and generate the jar file. 
+   mvn install
 
-###### 3. Once successfully build, navigate to the target directory of the project and look for the generated jar file iress-toyrobot-0.0.1-SNAPSHOT.jar ######
+3. Once successfully build, navigate to the target directory of the project and look for the generated jar file iress-toyrobot-0.0.1-SNAPSHOT.jar
 
-###### 4. Prepare a list of commands in a text file. Kindly refer on acceptable list of commands. You can also refer to some of the test data already available ######
-   ###### in the project directory src\test\java\com\si\iress\toyrobot\iresstoyrobot ######
+4. Prepare a list of commands in a text file. Kindly refer on acceptable list of commands. You can also refer to some of the test data already available
+   in the project directory src\test\java\com\si\iress\toyrobot\iresstoyrobot
 
-###### 5. Open a terminal and go to the target folder. Execute below command to run the application. Note that it's expecting a filepath argument. ######
+5. Open a terminal and go to the target folder. Execute below command to run the application. Note that it's expecting a filepath argument.
 	###### java -jar iress-toyrobot-0.0.1-SNAPSHOT.jar filepath ######
