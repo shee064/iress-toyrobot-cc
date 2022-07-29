@@ -12,4 +12,5 @@ public class MessageConstants {
 	public static final String APP_END="IressToyRobotApplication ended";
 	public static final String APP_EXT="Terminating.. No command detected.";
 	public static final String NO_VALID_COMMAND="No valid command to execute.";
+	public static final String INVALID_COMMAND=" is not a valid command and will be ignored.";
 }

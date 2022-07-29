@@ -3,6 +3,9 @@ package com.si.iress.toyrobot.trc.util;
 import java.util.regex.Matcher;
 import java.util.stream.Stream;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import com.si.iress.toyrobot.trc.component.CommandComponent;
 import com.si.iress.toyrobot.trc.component.LeftCommandComponent;
 import com.si.iress.toyrobot.trc.component.MoveCommandComponent;
@@ -17,6 +20,7 @@ import com.si.iress.toyrobot.trc.model.ToyRobot;
  */
 public class CommandUtil {
 
+	private static Logger LOGGER = LogManager.getLogger(CommandUtil.class);
 	/**
 	 * This method executes the command received according to command type
 	 * @param command
@@ -53,7 +57,7 @@ public class CommandUtil {
 		}else if (command.equals(String.valueOf(CommandEnum.REPORT))) {
 			return new ReportCommandComponent();
 		}else {
-			System.out.println(command + " is not a valid command and will be ignored.");
+			LOGGER.info(command + MessageConstants.INVALID_COMMAND);
 		}
 		
 		return null;
