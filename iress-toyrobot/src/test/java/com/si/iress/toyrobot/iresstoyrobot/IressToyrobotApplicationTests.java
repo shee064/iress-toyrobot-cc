@@ -4,7 +4,6 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.boot.Banner.Mode;
@@ -29,7 +28,6 @@ class IressToyrobotApplicationTests {
 	private ToyRobot robot;
 	
 	@BeforeEach
-	@Disabled
 	void setUp() {
 		springApp = new SpringApplication(IressToyRobotApplication.class);
 		springApp.setBannerMode(Mode.OFF);
@@ -89,7 +87,7 @@ class IressToyrobotApplicationTests {
 	@Test
 	void testCEmpty(CapturedOutput output) {
 		springApp.run("src/test/java/com/si/iress/toyrobot/iresstoyrobot/test_empty.txt");
-		assertTrue(output.getErr().contains("Failed"));	
+		assertTrue(output.getOut().contains(MessageConstants.NO_VALID_COMMAND));	
 	}
 	
 	

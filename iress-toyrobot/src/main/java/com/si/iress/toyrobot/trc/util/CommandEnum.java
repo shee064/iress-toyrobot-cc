@@ -26,6 +26,7 @@ public enum CommandEnum {
 				.map(CommandEnum::name)
 				.collect(Collectors.toList());
 	}
+	
 	public String getValue() {
 		return value;
 	}

@@ -43,7 +43,7 @@ public class IressToyRobotApplication implements CommandLineRunner{
 			if(commands != null) {
 				CommandUtil.executeCommandToRobot(robot, commands);
 			}else {
-				LOGGER.info(MessageConstants.NO_VALID_COMMAND);
+				LOGGER.info(MessageConstants.APP_EXT);
 			}
 			
 		}else {
