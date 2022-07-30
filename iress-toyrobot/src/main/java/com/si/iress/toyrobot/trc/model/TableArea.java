@@ -1,6 +1,6 @@
 package com.si.iress.toyrobot.trc.model;
 /**
- * TableArea object to set specific Length and width
+ * TableArea object to set specific unit length and width
  * @author sheenai
  *
  */
@@ -18,7 +18,6 @@ public class TableArea {
 	public int getUnitL() {
 		return unitL;
 	}
-
 
 
 	public int getUnitW() {

@@ -33,7 +33,7 @@ public class CommandInitializer {
 			if(fileCmd.exists()) {
 				for(String command: Files.readAllLines(Paths.get(filePath))) {
 					if(CommandValidator.validCommand(command, tableArea)) {
-						this.validCommands.add(command);
+						validCommands.add(command);
 					}
 				}
 				
