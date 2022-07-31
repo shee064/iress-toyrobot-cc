@@ -35,12 +35,15 @@ the table must be prevented however further valid movement commands myst still b
 
 1. Clone the application from github. See link below.<br/> 
    ###### https://github.com/shee064/iress-toyrobot-cc.git ######
-2. Navigate to the directory of the cloned project and execute the mvn install command to build the project and generate the jar file. 
+2. Navigate to the directory of the cloned project and execute the mvn install command to build the project and generate the jar file. <br> 
+   For Windows: 
    ###### mvnw install ######
+   For Linux: 
+   ###### ./mvnw install ######
 3. Once successfully built, navigate to the target directory of the project and look for the generated jar file 
    ###### iress-toyrobot-0.0.1-SNAPSHOT.jar ######
 4. Prepare a list of commands in a text file. Kindly refer on acceptable list of commands. You can also refer to some of the test data already available
    in the project directory 
    ###### src\test\java\com\si\iress\toyrobot\iresstoyrobot ######
-5. Open a terminal and go to the target folder. Execute below command to run the application. Note that it's expecting a filepath argument.
+5. Open a terminal and go to the target folder of the project. Execute java command to run the application. Note that it's expecting a filepath argument. See sample command below.
    ###### java -jar iress-toyrobot-0.0.1-SNAPSHOT.jar "C:\Users\sheenai\Documents\Project\iress-toyrobot\iress-toyrobot\src\test\java\com\si\iress\toyrobot\iresstoyrobot\test_A.txt" ######
